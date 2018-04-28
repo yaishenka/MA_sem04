@@ -1,0 +1,108 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Преамбула для набора конспектов
+% Версия 1.1
+% Алексей Трошин. mailto: ai-troshin@yandex.ru
+
+\documentclass[a4paper]{article}           % тип документа
+
+\usepackage{geometry}     
+              % задание полей текста
+\geometry{left=30mm,right=10mm,top=20mm,bottom=20mm}
+\usepackage[usenames]{color}
+\usepackage{colortbl}
+\usepackage{tikz}  
+\usepackage{amsmath,amsfonts,amssymb}      % расширенная математика
+\usepackage{xifthen}                       % удобный формат условий
+\usepackage{graphicx}                      % поддержка рисунков
+\usepackage{wrapfig}                       % поддержка обтекаемых рисунков
+\usepackage{subcaption}                    % поддержка 'субрисунков'
+\usepackage[makeroom]{cancel}              % поддержка зачеркиваний (сокращений)
+\usepackage{ wasysym }
+\usepackage{caption}                       % переопределение формата подписей
+\captionsetup[figure]{labelsep=period}     % 'Рис. 1. ' вместо 'Рис. 1: '
+
+\usepackage{unicode-math}                  % поддержка шрифта STIX Two
+\defaultfontfeatures{Ligatures=TeX,Mapping=tex-text}
+\setmainfont{STIX Two Text}
+\setmathfont{STIX Two Math}
+
+\usepackage{polyglossia}                   % поддержка языков в XeTeX
+\setdefaultlanguage[spelling=modern]{russian}
+\setotherlanguage{english}
+\PolyglossiaSetup{russian}{indentfirst=true}
+
+\sloppy                                    % строго соблюдать границы текста
+\linespread{1.3}                           % коэффициент межстрочного интервала
+\setlength{\parskip}{0.5em}                % вертик. интервал между абзацами
+
+\setcounter{secnumdepth}{0}                % отключение нумерации разделов
+\binoppenalty=1000                         % уменьшение переносов в формулах
+
+\newcommand{\Def}{\textbf{Def.} }          % объявление новых макрокоманд
+
+\newcommand{\Th}[1]{\textbf{Th\ifthenelse{\isempty{#1}}{}{ (#1)}.}}
+\newcommand{\Consequence}[1]
+           {\textbf{Следствие\ifthenelse{\isempty{#1}}{}{ #1}.}}
+\newcommand{\Problem}[1]{\textbf{Задача\ifthenelse{\isempty{#1}}{}{ (#1)}.}}
+
+\newcommand{\Remind}{\textbf{Напоминание.} }
+\newcommand{\Note}{\textbf{Замечание.} }
+\newcommand{\Statement}{\textbf{Утверждение.} }
+\newcommand{\Proof}{\textbf{Доказательство:} }
+\newcommand{\Prooff}{\textbf{Доказать:} }
+\newcommand{\Solution}{\textbf{Решение.} }
+\newcommand{\Endproof}{$\blacksquare$ }
+\newcommand{\Endproofmath}{\ \blacksquare}
+\newcommand{\Lemma}{\textbf{Лемма.} }
+\newcommand{\Example}{\textbf{Пример:} }
+\newcommand{\Examples}{\textbf{Примеры.} }
+
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\opn}{\operatorname}
+
+\newcommand{\va}{\mathbfit{a}}             % макрокоманды для векторов: a,b,c,n
+\newcommand{\vb}{\mathbfit{b}}
+\newcommand{\vc}{\mathbfit{c}}
+\newcommand{\vn}{\mathbfit{n}}
+
+\newcommand{\holds}{\hookrightarrow}       % символ 'выполняется'
+\newcommand{\N}{\mathbb{N}}                % символ множества N
+\newcommand{\Z}{\mathbb{Z}}                % символ множества Z
+\newcommand{\Q}{\mathbb{Q}}                % символ множества Q
+\newcommand{\R}{\mathbb{R}}                % символ множества R
+\newcommand{\U}{\text{U}}                  % символ окрестности
+\newcommand{\Uo}{\text{Ů}}                 % символ проколотой окрестности
+\newcommand{\lito}{\bar{\bar \textrm{o}}}  % символ 'o малое'
+\newcommand{\bigo}{\textrm{O}}             % символ 'o большое'
+\newcommand{\Ue}{\U_{\varepsilon}}
+\newcommand{\Uoe}{\Uo_{\varepsilon}}
+
+\newcommand{\eqdef}{\stackrel {\mathrm{def}}{=}}
+
+\newcommand{\notimplies}{\ \nRightarrow\ } % символ 'не следует'
+
+\newcommand{\eq}{\,=\,}
+\newcommand{\todo}{\textbf {ВСТАВИТЬ ПРИМЕРЫ С РИСУНКАМИ!!!} }
+
+\newcommand{\RNumb}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
+\renewcommand{\thefootnote}                % добавление ')' к номеру сноски
+             {\arabic{footnote})}
+
+
+
+\usepackage{titleps}                       % колонтитулы
+
+\newpagestyle{main}{
+  \setheadrule{.4pt}                       % линия отбивки верхнего колонтитула
+  \sethead{\coursename}{}{\ifnum\thepage=1 % ЛУ, Ц, ПУ верхнего колонтитула
+    \compiledby\else\sectiontitle\fi}
+  \setfootrule{.4pt}                       % линия отбивки нижнего колонтитула
+  \setfoot{\coursedate}{}{\thepage} }      % ЛУ, Ц, ПУ нижнего колонтитула
+
+\pagestyle{main}
+
+\newcommand{\Le}{\leqslant}                % русский стиль нестрогих неравенств
+\newcommand{\Ge}{\geqslant}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

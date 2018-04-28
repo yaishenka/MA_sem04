@@ -1,0 +1,37 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\coursename}{Математический анализ 1 к. 2 с.}
+\newcommand{\compiledby}{} % укажите свое имя
+\newcommand{\coursedate}{Весна 2018 г.}
+\input{../classes_style.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\section{Семинар №4}
+
+\subsection{Рассматриваем функции в $\R^2$.}
+
+\Def (предел $f(x,y)$ в точке $(x_0, y_0)$ по направлению $\vec l \,$).
+
+~~\parbox[t]{0.95\linewidth} {
+Пусть $f(x)$ определена в некоторой $\Uo(x_0, y_0)$ и пусть $\vec l (\cos\varphi, \sin\varphi)$ --- некоторый единичный вектор.
+$$\lim\limits_{\substack {x \to x_0 \\ y \to y_0 \\ \normalsize \text{$(x,y)  \in  l(\varphi)$}}} \! \! \! \! \! \! \eqdef \lim\limits_{\rho \to +0} f(x_0 + \rho\cos\varphi,\, y_0 + \rho\sin\varphi) $$
+}
+
+\Note $l(\varphi) = \left\{ (x,y) \, | \, x=x_0 + \rho\cos\varphi,\, y=y_0 + \rho\sin\varphi, \, \rho \in (0, +\infty) \right\}$ --- луч.
+
+\begin{figure}[h]
+	\begin{center}
+	    \includegraphics[width=0.25\textwidth]{1.png}
+	  \end{center}
+	\caption{}
+\end{figure}
+
+\Th {\textcolor{red}{\underline {\textcolor{black}{необходимое}}} условие $\boldsymbol {\exists \lim\limits_{\substack {x \to x_0 \\ y \to y_0}} f(x,y)}$}
+
+~~$\exists \lim\limits_{\substack {x \to x_0 \\ y \to y_0}} f(x,y) = a \Rightarrow \forall \varphi \in [0, 2\pi) \; \exists \! \! \! \! \! \! \! \! \lim\limits_{\substack {x \to x_0 \\ y \to y_0 \\ \normalsize \text{$(x,y)  \in  l(\varphi)$}}} \! \! \! \! \! \! f(x,y) = a$
+
+\Consequence{} $\lim\limits_{\substack {x \to x_0 \\ y \to y_0 \\ \normalsize \text{$(x,y)  \in  l(\varphi)$}}} \! \! \! \! \! \! f(x,y)$ зависит от $\varphi$ или $\nexists \Rightarrow \nexists \lim\limits_{\substack {x \to x_0 \\ y \to y_0}} f(x,y)$.
+
+
+
+\end{document}
