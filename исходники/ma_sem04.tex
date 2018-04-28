@@ -32,6 +32,14 @@ $$\lim\limits_{\substack {x \to x_0 \\ y \to y_0 \\ \normalsize \text{$(x,y)  \i
 
 \Consequence{} $\lim\limits_{\substack {x \to x_0 \\ y \to y_0 \\ \normalsize \text{$(x,y)  \in  l(\varphi)$}}} \! \! \! \! \! \! f(x,y)$ зависит от $\varphi$ или $\nexists \Rightarrow \nexists \lim\limits_{\substack {x \to x_0 \\ y \to y_0}} f(x,y)$.
 
+\Example $f(x,y) = \frac{xy}{x^2 + y^2}$. Исследовать $\exists$ - е $\lim\limits_{\substack {x \to x_0 \\ y \to y_0}} f(x,y) $.
+
+~~Рассмотрим $\! \! \! \! \! \!  \lim\limits_{\substack {x \to x_0 \\ y \to y_0 \\ \normalsize \text{$(x,y)  \in  l(\varphi)$}}} \! \! \! \! \! \! f(x,y) = \lim\limits_{\rho \to +0} \frac {\cancel{\rho}\cos\varphi \cancel{\rho}\sin\varphi}{\cancel{\rho^2}\underbrace{(\cos^2\varphi + \sin^2\varphi)}_{1}} = \lim\limits_{\rho \to \infty} (\cos\varphi\sin\varphi) = \underbrace{\cos\varphi\sin\varphi}_{\text{зависит от } \varphi} \Rightarrow \nexists  \lim\limits_{\substack {x \to x_0 \\ y \to y_0}} f(x,y)$.
+
+\Consequence{} $\forall \varphi \in [0, 2\pi) \exists \! \! \! \! \! \!  \lim\limits_{\substack {x \to x_0 \\ y \to y_0 \\ \normalsize \text{$(x,y)  \in  l(\varphi)$}}} \! \! \! \! \! \! f(x,y) = a  \cansel{\Rightarrow} \exists \lim\limits_{\substack {x \to x_0 \\ y \to y_0}} f(x,y) = a$. 
+
+
+
 
 
 \end{document}

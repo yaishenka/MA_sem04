@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.18)  28 APR 2018 15:44
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.18)  28 APR 2018 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1340,87 +1340,4 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+wasy on input line 11.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/wasysym/uwasy.fd
-File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-)
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(2)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 13.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(2)/m/n' will be
-(Font)              scaled to size 7.01247pt on input line 13.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(2)/m/n' will be
-(Font)              scaled to size 5.5051pt on input line 13.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(3)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 13.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(3)/m/n' will be
-(Font)              scaled to size 7.01224pt on input line 13.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(3)/m/n' will be
-(Font)              scaled to size 5.50493pt on input line 13.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <5.50502> not available
-(Font)              size <6> substituted on input line 13.
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 18.
-
-File: 1.png Graphic file (type bmp)
-<1.png>
-
-LaTeX Font Warning: Font shape `TU/STIXTwoMath(1)/bx/n' undefined
-(Font)              using `TU/STIXTwoMath(1)/m/n' instead on input line 29.
-
-
-LaTeX Font Warning: Font shape `TU/STIXTwoMath(2)/bx/n' undefined
-(Font)              using `TU/STIXTwoMath(2)/m/n' instead on input line 29.
-
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(2)/bx/n' will be
-(Font)              scaled to size 7.01247pt on input line 29.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(2)/bx/n' will be
-(Font)              scaled to size 5.5051pt on input line 29.
-
-LaTeX Font Warning: Font shape `TU/STIXTwoMath(3)/bx/n' undefined
-(Font)              using `TU/STIXTwoMath(3)/m/n' instead on input line 29.
-
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(3)/bx/n' will be
-(Font)              scaled to size 7.01224pt on input line 29.
-LaTeX Font Info:    Font shape `TU/STIXTwoMath(3)/bx/n' will be
-(Font)              scaled to size 5.50493pt on input line 29.
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <7.01236> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 29.
-
-
-LaTeX Font Warning: Font shape `U/wasy/b/n' in size <5.50502> not available
-(Font)              Font shape `U/wasy/m/n' tried instead on input line 29.
-
-
-LaTeX Font Warning: Font shape `U/wasy/m/n' in size <5.50502> not available
-(Font)              size <6> substituted on input line 29.
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 31.
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 33.
-
-[1
-
-] (./ma_sem04.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 2.2475pt have occurred.
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
-Here is how much of TeX's memory you used:
- 28840 strings out of 493007
- 584561 string characters out of 6134605
- 742066 words of memory out of 5000000
- 32372 multiletter control sequences out of 15000+600000
- 543308 words of font info for 118 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 57i,14n,77p,10440b,399s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on ma_sem04.pdf (1 page).
+(/usr/local/texlive/2017/texm
